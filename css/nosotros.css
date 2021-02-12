@@ -1,0 +1,109 @@
+.our-team {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.our-team .container--flex {
+    align-items: flex-start;
+}
+
+.our-team__title {
+    font-family: 'Pacifico', cursive;
+    color: #DE423A;
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.our-team__img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.our-team__txt {
+    padding: 10px;
+}
+
+.group--color .main__body {
+    background: #00acee;
+    padding-bottom: 20px;
+}
+
+.our-history .contaniner--flex {
+    align-items: flex-start;
+}
+
+.our-history .column {
+    background: #DE423A;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.our-history__img {
+    border: 5px solid #ddd;
+    height: 250px;
+    object-fit: cover;
+}
+
+.our-history .main__txt {
+    text-align: center
+}
+
+@media screen and (min-width:480px) {
+    .our-team__img {
+        width: 150px;
+        height: 150px;
+    }
+    .our-history .column {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .our-team__img {
+        width: 220px;
+        height: 220px;
+    }
+    .group--color .main__body {
+        padding-bottom: 30px;
+    }
+    .our-history .container {
+        margin-top: -40px;
+        width: 95%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .our-team__img {
+        width: 250px;
+        height: 250px;
+    }
+    .our-team__title {
+        font-size: 2.1em;
+    }
+    .group--color .main__body {
+        padding-bottom: 50px;
+    }
+    .our-history .container {
+        margin-top: -70px;
+        width: 900px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .group--color .main__body {
+        padding-bottom: 50px;
+    }
+    .our-history .container {
+        margin-top: -70px;
+        width: 1100px;
+    }
+}

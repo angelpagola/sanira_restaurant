@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Pollería</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/fontello.css">
+
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <h1 class="logo"><span class="icon-food"></span>Pollería Sanira</h1>
+            </div>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span class="icon-phone">926-904-268</span>
+                </p>
+                <p class="main-header__contactInfo__address">
+                    <span class="icon-location">Urb. Las Dunas 123 - Huaral, Perú</span>
+                </p>
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <span class="icon-menu" id="btnmenu"></span>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="index.html" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="nosotros.html" class="menu__link">Nostros</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link">Galería</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__link  menu__link--select">Contacto</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-instagram"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-twitter"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-mail"></span></a>
+            </div>
+        </div>
+    </nav>
+    <section class="banner">
+        <img src="image/banner-contact.jpg" alt="banner" class="banner__img">
+        <div class="banner__content">
+            Puedes hacer tus pedidos aquí
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="group contact">
+            <h2 class="group__title">Contáctenos</h2>
+            <div class="container container--flex">
+                <div class="contact-information column column--50">
+                    <h5 class="column__title">
+                        Horario de atención
+                    </h5>
+                    <p class="column__txt">
+                        <p> De Lunes a Domingo, de 12:00 am a 11:45 pm</p>
+                        <p> Tiempo de Entrega: 40 minutos</p>
+                    </p>
+                    <p class="column__txt">
+                        <span class="icon-phone"></span> Teléfono: 926-904-268
+                    </p>
+                    <p class="column__txt">
+                        <span class="icon-mobile"></span> Celular: 926-987-925
+                    </p>
+                    <p class="column__txt">
+                        <span class="icon-whatsapp"></span> Whatsapp: 926-987-925
+                    </p>
+                    <p class="column__txt">
+                        <span class="icon-location"></span> Urb. Las Dunas 123 - Huaral, Perú
+                    </p>
+                    <p class="column__txt">
+                        <span class="icon-mail"></span> sanirarestaurant@gmail.com
+                    </p>
+                    <br>
+                    <div class="social-icon">
+                        <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                        <a href="" class="social-icon__link"><span class="icon-instagram"></span></a>
+                        <a href="" class="social-icon__link"><span class="icon-twitter"></span></a>
+                        <a href="" class="social-icon__link"><span class="icon-mail"></span></a>
+                    </div>
+                </div>
+                <form action="enviar.php" method="POST" class="formulario column column--50" onsubmit="return validar();">
+                    <input type="text" class="formulario__input-txt" name="nombre" id="nombres">
+                    <label for="" class="formulario__label">Nombres</label>
+
+                    <input type="mail" class="formulario__input-txt" name="correo" id="correo">
+                    <label for="" class="formulario__label">Correo</label>
+
+                    <input type="number" class="formulario__input-txt" name="telefono" id="telefono">
+                    <label for="" class="formulario__label">Teléfono</label>
+
+                    <label for="" class="formulario__label-textarea">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="formulario__textarea"></textarea>
+
+                    <input type="submit" class="btn formulario__btn" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">¿Por qué visitarnos?</h2>
+                <p class="column__txt column__rpt">
+                    Aquí puedes disfrutar no solo de tu pollo a la brasa familiar sino también de otras especialidades de la carta y todo esto acompañado de una excelente atención, perfecto para venir en familia.
+                </p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contáctanos</h2>
+                <p class="column__txt"><span class="icon-location"></span>Urb. Las Dunas 123 - Huaral, Perú</p>
+                <p class="column__txt"><span class="icon-phone"></span>926-904-268</p>
+                <p class="column__txt"><span class="icon-whatsapp"></span>926-987-925</p>
+                <p class="column__txt"><span class="icon-mail"></span>sanirarestaurant@gmail.com</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Síguenos en nuestras redes sociales</h2>
+                <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p>
+                <p class="column__txt"><a href="" class="icon-instagram">Instagram</a></p>
+                <p class="column__txt"><a href="" class="icon-twitter">Twitter</a></p>
+                <p class="column__txt"><a href="" class="icon-youtube">Nuestro canal de youtube</a></p>
+            </div>
+            <p class="copy">&copy; 2022 Sanira Restaurant | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/validar.js></script>
+
+</body>
+
+</html>
